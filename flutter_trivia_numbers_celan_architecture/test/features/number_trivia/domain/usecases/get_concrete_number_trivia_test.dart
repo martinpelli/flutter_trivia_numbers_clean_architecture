@@ -18,7 +18,7 @@ void main() {
   const tNumber = 1;
   const tNumberTrivia = NumberTrivia(number: tNumber, text: 'test');
 
-  test('should get trivia for the number from the repossitory', () async {
+  test('should get trivia for the number from the repository', () async {
     //arrange
     when(() => mockNumberTriviaRepository.getConcreteNumberTrivia(any())).thenAnswer((_) async => (null, tNumberTrivia));
     //act
