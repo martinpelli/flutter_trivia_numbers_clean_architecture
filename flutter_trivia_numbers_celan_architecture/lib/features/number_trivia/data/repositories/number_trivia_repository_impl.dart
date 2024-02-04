@@ -1,7 +1,7 @@
 import 'package:flutter_trivia_numbers_celan_architecture/core/error/exceptions.dart';
 import 'package:flutter_trivia_numbers_celan_architecture/features/number_trivia/data/models/number_trivida_model.dart';
 
-import '../../../../core/platform/network_info.dart';
+import '../../../../core/network/network_info.dart';
 import '../datasources/number_trivia_local_data_source.dart';
 import '../datasources/number_trivia_remote_data_source.dart';
 import '../../../../core/error/failures.dart';
