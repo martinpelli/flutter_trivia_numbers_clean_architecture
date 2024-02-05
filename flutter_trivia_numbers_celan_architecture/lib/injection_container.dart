@@ -34,7 +34,9 @@ Future<void> init() async {
   serviceLocator.registerLazySingleton<NetworkInfo>(() => DataConnectionCheckerNetworkInfo(serviceLocator()));
 
   //! External
-  serviceLocator.registerLazySingletonAsync<SharedPreferences>(() async => await SharedPreferences.getInstance());
+  final sharedPreferences = await SharedPreferences.getInstance();
+
+  serviceLocator.registerSingletonAsync<SharedPreferences>(() async => sharedPreferences);
   serviceLocator.registerLazySingleton(() => (http.Client()));
   serviceLocator.registerLazySingleton(() => DataConnectionChecker());
 }

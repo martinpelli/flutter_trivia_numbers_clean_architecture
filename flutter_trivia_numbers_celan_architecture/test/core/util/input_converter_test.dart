@@ -2,7 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_trivia_numbers_celan_architecture/core/util/input_converter.dart';
 
 void main() {
-  late final InputConverter inputConverter;
+  late InputConverter inputConverter;
 
   setUp(() {
     inputConverter = InputConverter();
