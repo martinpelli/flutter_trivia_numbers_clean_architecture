@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_trivia_numbers_celan_architecture/injection_container.dart';
 
-void main() {
+void main() async {
+  await init();
   runApp(const MyApp());
 }
 
